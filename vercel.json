@@ -1,11 +1,7 @@
 {
   "functions": {
-    "api/bot.py": {
-      "runtime": "python3"
-    },
-    "api/reminder.py": {
-      "runtime": "python3"
-    }
+    "api/bot.py": {},
+    "api/reminder.py": {}
   },
   "crons": [
     {
