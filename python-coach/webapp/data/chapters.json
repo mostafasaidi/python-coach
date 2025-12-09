@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "title": "شروع با پایتون",
+    "description": "نصب، متغیرها، انواع داده، عملگرها",
+    "lessons": 5,
+    "icon": "🚀",
+    "duration": "۴ ساعت",
+    "difficulty": "مبتدی"
+  },
+  {
+    "id": 2,
+    "title": "کنترل جریان و حلقه‌ها",
+    "description": "شرط‌ها، حلقه for و while، break و continue",
+    "lessons": 5,
+    "icon": "🔄",
+    "duration": "۳ ساعت",
+    "difficulty": "مبتدی"
+  },
+  {
+    "id": 3,
+    "title": "توابع و ماژول‌ها",
+    "description": "تعریف توابع، پارامترها، import ماژول‌ها",
+    "lessons": 5,
+    "icon": "⚙️",
+    "duration": "۳ ساعت",
+    "difficulty": "مبتدی"
+  },
+  {
+    "id": 4,
+    "title": "کار با فایل و استثناها",
+    "description": "خواندن/نوشتن فایل، مدیریت خطا با try/except",
+    "lessons": 5,
+    "icon": "📁",
+    "duration": "۴ ساعت",
+    "difficulty": "متوسط"
+  },
+  {
+    "id": 5,
+    "title": "برنامه‌نویسی شیءگرا",
+    "description": "کلاس، وراثت، polymorphism، magic methods",
+    "lessons": 5,
+    "icon": "🏗️",
+    "duration": "۵ ساعت",
+    "difficulty": "متوسط"
+  },
+  {
+    "id": 6,
+    "title": "کتابخانه‌های استاندارد",
+    "description": "datetime, json, os, pathlib, collections",
+    "lessons": 5,
+    "icon": "📚",
+    "duration": "۴ ساعت",
+    "difficulty": "متوسط"
+  },
+  {
+    "id": 7,
+    "title": "NumPy کامل",
+    "description": "آرایه‌ها، عملیات ریاضی، broadcasting",
+    "lessons": 5,
+    "icon": "🔢",
+    "duration": "۶ ساعت",
+    "difficulty": "متوسط"
+  },
+  {
+    "id": 8,
+    "title": "Pandas و تحلیل داده",
+    "description": "DataFrame، Series، تحلیل داده‌ها، GroupBy",
+    "lessons": 5,
+    "icon": "📊",
+    "duration": "۶ ساعت",
+    "difficulty": "متوسط"
+  },
+  {
+    "id": 9,
+    "title": "مصورسازی داده",
+    "description": "Matplotlib، Seaborn، نمودارهای پیشرفته",
+    "lessons": 5,
+    "icon": "📈",
+    "duration": "۵ ساعت",
+    "difficulty": "متوسط"
+  },
+  {
+    "id": 10,
+    "title": "مقدمه‌ای بر یادگیری ماشین",
+    "description": "مفاهیم پایه ML، انواع یادگیری، evaluation",
+    "lessons": 5,
+    "icon": "🤖",
+    "duration": "۴ ساعت",
+    "difficulty": "پیشرفته"
+  },
+  {
+    "id": 11,
+    "title": "یادگیری عملی با Scikit-learn",
+    "description": "مدل‌های طبقه‌بندی، رگرسیون، clustering",
+    "lessons": 5,
+    "icon": "🔧",
+    "duration": "۶ ساعت",
+    "difficulty": "پیشرفته"
+  },
+  {
+    "id": 12,
+    "title": "مقدمه‌ای بر یادگیری عمیق",
+    "description": "شبکه‌های عصبی، backpropagation، activation functions",
+    "lessons": 5,
+    "icon": "🧠",
+    "duration": "۵ ساعت",
+    "difficulty": "پیشرفته"
+  },
+  {
+    "id": 13,
+    "title": "PyTorch مقدماتی",
+    "description": "تنسورها، autograd، Dataset و DataLoader",
+    "lessons": 5,
+    "icon": "🔥",
+    "duration": "۶ ساعت",
+    "difficulty": "پیشرفته"
+  },
+  {
+    "id": 14,
+    "title": "شبکه‌های عصبی با PyTorch",
+    "description": "MLP، CNN، RNN، LSTM، Transformer",
+    "lessons": 5,
+    "icon": "🕸️",
+    "duration": "۸ ساعت",
+    "difficulty": "پیشرفته"
+  },
+  {
+    "id": 15,
+    "title": "مدل‌های پیشرفته و Transformers",
+    "description": "Transfer Learning، HuggingFace، fine-tuning",
+    "lessons": 5,
+    "icon": "⚡",
+    "duration": "۷ ساعت",
+    "difficulty": "پیشرفته"
+  },
+  {
+    "id": 16,
+    "title": "استقرار مدل‌ها و پروژه نهایی",
+    "description": "FastAPI، Streamlit، Docker، Gradio، deployment",
+    "lessons": 5,
+    "icon": "🚢",
+    "duration": "۶ ساعت",
+    "difficulty": "پیشرفته"
+  }
+]

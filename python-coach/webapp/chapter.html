@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فصل آموزش پایتون</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/chapters.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+
+
+<body>
+    <div class="app-container">
+        <!-- هدر فصل -->
+        <header class="chapter-header">
+            <div class="header-top">
+                <button class="back-btn" id="back-btn">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <div class="chapter-info">
+                    <h1 id="chapter-title">در حال بارگذاری...</h1>
+                    <p id="chapter-description" class="chapter-subtitle"></p>
+                </div>
+                <div class="chapter-stats">
+                    <div class="stat">
+                        <i class="fas fa-book-open"></i>
+                        <span id="completed-lessons">0</span>/<span id="total-lessons">5</span>
+                    </div>
+                    <div class="progress-circle">
+                        <svg width="60" height="60">
+                            <circle cx="30" cy="30" r="27" stroke="#e9ecef" stroke-width="3" fill="none" />
+                            <circle id="progress-circle" cx="30" cy="30" r="27" stroke="#4361ee" stroke-width="3"
+                                fill="none" stroke-dasharray="169.56" stroke-dashoffset="169.56"
+                                transform="rotate(-90 30 30)" />
+                        </svg>
+                        <span id="progress-percent">0%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chapter-meta">
+                <div class="meta-tag">
+                    <i class="fas fa-clock"></i>
+                    <span id="chapter-duration">۴ ساعت</span>
+                </div>
+                <div class="meta-tag">
+                    <i class="fas fa-signal"></i>
+                    <span id="chapter-difficulty">مبتدی</span>
+                </div>
+                <div class="meta-tag">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span id="chapter-status">شروع نشده</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- محتوای اصلی -->
+        <main class="chapter-main">
+            <!-- بخش اهداف یادگیری -->
+            <section class="learning-goals">
+                <h2><i class="fas fa-bullseye"></i> اهداف این فصل</h2>
+                <div class="goals-list" id="learning-goals">
+                    <div class="goal-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>یادگیری مفاهیم پایه</span>
+                    </div>
+                    <div class="goal-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>نوشتن اولین برنامه</span>
+                    </div>
+                    <!-- بقیه اهداف با JavaScript اضافه می‌شوند -->
+                </div>
+            </section>
+
+            <!-- بخش درس‌ها -->
+            <section class="lessons-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-list-ol"></i> درس‌های این فصل</h2>
+                    <p class="section-subtitle">به ترتیب پیش بروید تا مفاهیم را کامل یاد بگیرید</p>
+                </div>
+
+                <div class="lessons-list" id="lessons-list">
+                    <!-- درس‌ها با JavaScript بارگیری می‌شوند -->
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>در حال بارگذاری درس‌ها...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- بخش محتوای تکمیلی -->
+            <section class="enhanced-content">
+                <div class="section-header">
+                    <h2><i class="fas fa-magic"></i> محتوای هوشمند</h2>
+                    <p class="section-subtitle">با هوش مصنوعی عمیق‌تر یاد بگیرید</p>
+                </div>
+
+                <div class="enhance-options">
+                    <button class="enhance-btn" id="ask-deepseek">
+                        <i class="fas fa-robot"></i>
+                        <span>سوال از DeepSeek</span>
+                        <small>محتوای سفارشی برای شما</small>
+                    </button>
+
+                    <button class="enhance-btn" id="get-examples">
+                        <i class="fas fa-code"></i>
+                        <span>مثال‌های بیشتر</span>
+                        <small>تمرین‌های عملی اضافی</small>
+                    </button>
+
+                    <button class="enhance-btn" id="practice-projects">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>پروژه عملی</span>
+                        <small>پیاده‌سازی واقعی</small>
+                    </button>
+                </div>
+            </section>
+
+            <!-- بخش نکات کلیدی -->
+            <section class="key-points">
+                <h2><i class="fas fa-lightbulb"></i> نکات کلیدی</h2>
+                <div class="points-list" id="key-points">
+                    <!-- نکات با JavaScript بارگیری می‌شوند -->
+                </div>
+            </section>
+        </main>
+
+        <!-- ناوبری پایین -->
+        <nav class="chapter-nav">
+            <button class="nav-btn" id="prev-lesson" disabled>
+                <i class="fas fa-arrow-right"></i>
+                <span>درس قبلی</span>
+            </button>
+
+            <button class="nav-btn primary" id="start-learning">
+                <i class="fas fa-play"></i>
+                <span>شروع یادگیری</span>
+            </button>
+
+            <button class="nav-btn" id="next-lesson" disabled>
+                <i class="fas fa-arrow-left"></i>
+                <span>درس بعدی</span>
+            </button>
+        </nav>
+    </div>
+
+    <!-- اسکریپت‌ها -->
+    <script src="js/auth.js"></script>
+    <script src="js/chapters.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/chapter-page.js"></script>
+
+</body>
+
+</html>
