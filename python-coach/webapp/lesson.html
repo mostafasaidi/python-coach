@@ -1,401 +1,0 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>درس پایتون</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/lesson.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- اضافه کن بعد از font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
-
-</head>
-
-<body>
-    <div class="app-container">
-        <!-- هدر -->
-        <div class="lesson-header">
-            <div class="lesson-header-top">
-                <button class="back-btn" onclick="window.history.back()">
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="lesson-info">
-                    <div class="breadcrumb" id="breadcrumb">
-                        <span id="chapter-title">فصل ۱</span> / <span id="lesson-number">درس ۱</span>
-                    </div>
-                    <h1 id="lesson-title">عنوان درس</h1>
-                </div>
-                <button class="complete-btn" id="complete-btn">
-                    <i class="far fa-check-circle"></i>
-                    <span>تکمیل درس</span>
-                </button>
-            </div>
-
-            <div class="lesson-progress">
-                <div class="progress-bar">
-                    <div class="progress-fill" id="lesson-progress-fill" style="width: 20%"></div>
-                </div>
-                <div class="progress-labels">
-                    <span>پیشرفت مطالعه</span>
-                    <span id="progress-text">20%</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- محتوای اصلی -->
-        <div class="lesson-content">
-            <!-- بخش تئوری -->
-            <div class="content-section">
-                <h2 class="section-title">
-                    <i class="fas fa-book"></i>
-                    <span>تئوری درس</span>
-                </h2>
-                <div class="lesson-text" id="theory-content">
-                    <p>در این درس با مفاهیم پایه پایتون آشنا می‌شوید...</p>
-
-                    <h3>ویژگی‌های پایتون:</h3>
-                    <ul>
-                        <li><strong>ساده و خوانا:</strong> نحو (syntax) ساده‌ای دارد</li>
-                        <li><strong>مفسری:</strong> نیازی به کامپایل ندارد</li>
-                        <li><strong>چندمنظوره:</strong> برای وب، داده، هوش مصنوعی</li>
-                        <li><strong>کتابخانه‌های غنی:</strong> هزاران کتابخانه رایگان</li>
-                    </ul>
-
-                    <p>پایتون برای شروع برنامه‌نویسی بسیار مناسب است.</p>
-                </div>
-            </div>
-
-            <!-- مثال‌های کد -->
-            <div class="content-section">
-                <h2 class="section-title">
-                    <i class="fas fa-code"></i>
-                    <span>مثال‌های کد</span>
-                </h2>
-
-                <div class="examples-grid">
-                    <!-- مثال ۱ -->
-                    <div class="example-card">
-                        <div class="example-title">
-                            <i class="fas fa-play-circle"></i>
-                            <span>برنامه اول: سلام دنیا</span>
-                        </div>
-                        <div class="code-block">
-                            <div class="code-header">
-                                <span>python</span>
-                                <button class="copy-code-btn">
-                                    <i class="fas fa-copy"></i> کپی
-                                </button>
-                            </div>
-                            <pre><code># اولین برنامه پایتون
-print("سلام دنیا!")
-print("خوش آمدید به آموزش پایتون")</code></pre>
-                        </div>
-                    </div>
-
-                    <!-- مثال ۲ -->
-                    <div class="example-card">
-                        <div class="example-title">
-                            <i class="fas fa-calculator"></i>
-                            <span>متغیرها و محاسبات</span>
-                        </div>
-                        <div class="code-block">
-                            <div class="code-header">
-                                <span>python</span>
-                                <button class="copy-code-btn">
-                                    <i class="fas fa-copy"></i> کپی
-                                </button>
-                            </div>
-                            <pre><code># تعریف متغیرها
-name = "علی"
-age = 25
-
-# محاسبات
-x = 10
-y = 20
-sum = x + y
-
-print(f"نام: {name}")
-print(f"سن: {age}")
-print(f"مجموع: {sum}")</code></pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- تمرین‌ها -->
-            <div class="content-section">
-                <h2 class="section-title">
-                    <i class="fas fa-dumbbell"></i>
-                    <span>تمرین‌ها</span>
-                </h2>
-
-                <div class="exercise-card">
-                    <div class="exercise-header">
-                        <div class="exercise-title">
-                            <i class="fas fa-star"></i>
-                            <span>تمرین ۱: نمایش نام</span>
-                        </div>
-                        <div class="difficulty-badge difficulty-easy">آسان</div>
-                    </div>
-
-                    <div class="exercise-question">
-                        برنامه‌ای بنویسید که نام شما را بگیرد و پیام خوش‌آمد بدهد.
-                    </div>
-
-                    <div class="exercise-actions">
-                        <button class="hint-btn" onclick="toggleHint('hint1')">
-                            <i class="fas fa-lightbulb"></i> نمایش راهنمایی
-                        </button>
-                        <button class="solution-btn" onclick="showSolution('solution1')">
-                            <i class="fas fa-eye"></i> مشاهده راه‌حل
-                        </button>
-                    </div>
-
-                    <div class="exercise-hint" id="hint1">
-                        <strong>راهنمایی:</strong> از تابع <code>input()</code> برای گرفتن ورودی استفاده کنید.
-                    </div>
-
-                    <div class="exercise-solution" id="solution1" style="display: none;">
-                        <strong>راه‌حل:</strong>
-                        <pre><code>name = input("نام شما چیست؟ ")
-print(f"سلام {name}!")</code></pre>
-                    </div>
-                </div>
-
-                <div class="exercise-card">
-                    <div class="exercise-header">
-                        <div class="exercise-title">
-                            <i class="fas fa-star"></i>
-                            <span>تمرین ۲: جمع دو عدد</span>
-                        </div>
-                        <div class="difficulty-badge difficulty-medium">متوسط</div>
-                    </div>
-
-                    <div class="exercise-question">
-                        برنامه‌ای بنویسید که دو عدد از کاربر بگیرد و حاصل جمع آن‌ها را نمایش دهد.
-                    </div>
-
-                    <button class="hint-btn" onclick="toggleHint('hint2')">
-                        <i class="fas fa-lightbulb"></i> نمایش راهنمایی
-                    </button>
-
-                    <div class="exercise-hint" id="hint2">
-                        <strong>راهنمایی:</strong> ورودی را با <code>int()</code> به عدد تبدیل کنید.
-                    </div>
-                </div>
-            </div>
-
-            <!-- محتوای تکمیلی -->
-            <div class="enhanced-section" id="enhanced-section">
-                <h2 class="section-title">
-                    <i class="fas fa-robot"></i>
-                    <span>محتوای تکمیلی از DeepSeek</span>
-                </h2>
-
-                <div class="enhanced-content" id="enhanced-content">
-                    <div class="enhanced-result">
-                        <h3><i class="fas fa-robot"></i> نکات پیشرفته:</h3>
-                        <ul>
-                            <li>پایتون از تورفتگی (indentation) برای تعریف بلوک‌های کد استفاده می‌کند</li>
-                            <li>متغیرها در پایتون نیازی به تعیین نوع ندارند (Dynamic Typing)</li>
-                            <li>می‌توانید از type hints برای مشخص کردن نوع متغیرها استفاده کنید</li>
-                        </ul>
-
-                        <h3><i class="fas fa-code"></i> مثال تکمیلی:</h3>
-                        <div class="code-block">
-                            <div class="code-header">
-                                <span>python</span>
-                                <button class="copy-code-btn">
-                                    <i class="fas fa-copy"></i> کپی
-                                </button>
-                            </div>
-                            <pre><code># بررسی نوع متغیرها
-x = 10
-y = "سلام"
-z = [1, 2, 3]
-
-print(f"نوع x: {type(x)}")
-print(f"نوع y: {type(y)}")
-print(f"نوع z: {type(z)}")</code></pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ناوبری پایین -->
-        <div class="lesson-nav">
-            <button class="nav-btn" id="prev-btn" onclick="prevLesson()">
-                <i class="fas fa-arrow-right"></i>
-                <span>درس قبلی</span>
-            </button>
-
-            <div class="nav-actions">
-                <button class="action-btn small" onclick="requestEnhancedContent()">
-                    <i class="fas fa-magic"></i>
-                    <span>محتوای بیشتر</span>
-                </button>
-            </div>
-
-            <button class="nav-btn" id="next-btn" onclick="nextLesson()">
-                <i class="fas fa-arrow-left"></i>
-                <span>درس بعدی</span>
-            </button>
-        </div>
-    </div>
-
-    <!-- JavaScript ساده -->
-    <script>
-        // توابع ساده
-        function toggleHint(hintId) {
-            const hint = document.getElementById(hintId);
-            hint.style.display = hint.style.display === 'block' ? 'none' : 'block';
-        }
-
-        function showSolution(solutionId) {
-            const solution = document.getElementById(solutionId);
-            solution.style.display = 'block';
-        }
-
-        function requestEnhancedContent() {
-            const enhancedSection = document.getElementById('enhanced-section');
-            enhancedSection.style.display = 'block';
-
-            // اسکرول به بخش محتوای تکمیلی
-            enhancedSection.scrollIntoView({ behavior: 'smooth' });
-
-            // نمایش پیام
-            showNotification('محتوای تکمیلی نمایش داده شد', 'success');
-        }
-
-        function prevLesson() {
-            const currentLesson = parseInt(document.getElementById('lesson-number').textContent.replace('درس ', ''));
-            if (currentLesson > 1) {
-                window.location.href = `/lesson/1/${currentLesson - 1}`;
-            } else {
-                showNotification('این اولین درس است', 'info');
-            }
-        }
-
-        function nextLesson() {
-            const currentLesson = parseInt(document.getElementById('lesson-number').textContent.replace('درس ', ''));
-            window.location.href = `/lesson/1/${currentLesson + 1}`;
-        }
-
-        function completeLesson() {
-            const btn = document.getElementById('complete-btn');
-            btn.innerHTML = '<i class="fas fa-check-circle"></i><span>تکمیل شده</span>';
-            btn.classList.add('completed');
-            btn.disabled = true;
-
-            // به‌روزرسانی پیشرفت
-            document.getElementById('lesson-progress-fill').style.width = '100%';
-            document.getElementById('progress-text').textContent = '100%';
-
-            showNotification('🎉 درس با موفقیت تکمیل شد!', 'success');
-        }
-
-        function showNotification(message, type = 'info') {
-            // ایجاد notification
-            const notification = document.createElement('div');
-            notification.style.cssText = `
-                position: fixed;
-                bottom: 100px;
-                right: 20px;
-                left: 20px;
-                background: ${type === 'success' ? '#4cc9f0' : '#4361ee'};
-                color: white;
-                padding: 15px;
-                border-radius: 10px;
-                z-index: 9999;
-                text-align: center;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-                animation: slideUp 0.3s ease;
-            `;
-
-            notification.innerHTML = message;
-            document.body.appendChild(notification);
-
-            setTimeout(() => {
-                notification.style.animation = 'slideDown 0.3s ease';
-                setTimeout(() => notification.remove(), 300);
-            }, 3000);
-        }
-
-        // راه‌اندازی اولیه
-        document.addEventListener('DOMContentLoaded', function () {
-            // تنظیم رویداد دکمه تکمیل
-            document.getElementById('complete-btn').addEventListener('click', completeLesson);
-
-            // تنظیم رویداد دکمه‌های کپی
-            document.querySelectorAll('.copy-code-btn').forEach(btn => {
-                btn.addEventListener('click', function () {
-                    const code = this.closest('.code-block').querySelector('code').textContent;
-                    navigator.clipboard.writeText(code).then(() => {
-                        const originalHTML = this.innerHTML;
-                        this.innerHTML = '<i class="fas fa-check"></i> کپی شد!';
-                        this.style.background = '#4cc9f0';
-
-                        setTimeout(() => {
-                            this.innerHTML = originalHTML;
-                            this.style.background = '';
-                        }, 2000);
-
-                        showNotification('کد کپی شد!', 'success');
-                    });
-                });
-            });
-
-            // اضافه کردن استایل انیمیشن
-            const style = document.createElement('style');
-            style.textContent = `
-                @keyframes slideUp {
-                    from { transform: translateY(100px); opacity: 0; }
-                    to { transform: translateY(0); opacity: 1; }
-                }
-                @keyframes slideDown {
-                    from { transform: translateY(0); opacity: 1; }
-                    to { transform: translateY(100px); opacity: 0; }
-                }
-            `;
-            document.head.appendChild(style);
-
-            // استخراج اطلاعات از URL
-            const path = window.location.pathname;
-            const match = path.match(/\/lesson\/(\d+)\/(\d+)/);
-
-            if (match) {
-                const chapterId = match[1];
-                const lessonId = match[2];
-
-                document.getElementById('chapter-title').textContent = `فصل ${chapterId}`;
-                document.getElementById('lesson-number').textContent = `درس ${lessonId}`;
-                document.getElementById('lesson-title').textContent = `درس ${lessonId}: آموزش پایتون`;
-
-                console.log(`📖 Lesson ${chapterId}.${lessonId} loaded`);
-            }
-        });
-
-        // هایلایت کدها وقتی صفحه لود شد
-        document.addEventListener('DOMContentLoaded', function () {
-            // هاداخل pre
-            document.querySelectorAll('pre code').forEach((block) => {
-                hljs.highlightElement(block);
-            });
-
-            // یا فقط کدهای پایتون
-            document.querySelectorAll('pre code.language-python').forEach((block) => {
-                hljs.highlightElement(block);
-            });
-        });
-    </script>
-
-
-</body>
-
-</html>
