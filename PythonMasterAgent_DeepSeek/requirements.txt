@@ -1,0 +1,10 @@
+crewai
+langchain
+langchain-groq
+langchain-together
+langchain-huggingface
+langchain-openai
+python-telegram-bot
+python-dotenv
+pytz
+tenacity
