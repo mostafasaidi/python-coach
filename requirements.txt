@@ -1,7 +1,0 @@
-python-telegram-bot==20.7
-python-dotenv==1.0.0
-requests==2.31.0
-reportlab==4.0.4
-Pillow==10.1.0
-arabic-reshaper==3.0.0
-python-bidi==0.4.2
