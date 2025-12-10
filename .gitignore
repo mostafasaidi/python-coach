@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# Env
+.env
+.env.local
+
+# Database
+*.db
+
+# VSCode
+.vscode/
+
+# Byte-compiled / distribution
+build/
+dist/
+*.egg-info/
